@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="calcu.css">
+    <title>calcula</title>
+</head>
+<body>
+        <center>
+            <div class="calculator-grid">
+                    <input type="text" id="zero" placeholder="0">  
+                <div class="table">
+                    <button onclick="erase()" class="span-2">Clear</button>
+                    <button onclick="show('.')" id="btn" value="1">.</button>
+                    <button onclick="del()">Del</button>
+
+                    <button onclick="show(7)" id="btn" value="1">7</button>
+                    <button onclick="show(8)" id="btn" value="2">8</button>
+                    <button onclick="show(9)" id="btn" value="3">9</button>
+                    <button onclick="operation('+')">+</button>
+                    <button onclick="show(4)" id="btn" value="4">4</button>
+                    <button onclick="show(5)" id="btn" value="5">5</button>
+                    <button onclick="show(6)" id="btn" value="6">6</button>
+                    <button onclick="operation('-')">-</button>
+                    <button onclick="show(1)" id="btn" value="7">1</button>
+                    <button onclick="show(2)" id="btn" value="8">2</button>
+                    <button onclick="show(3)" id="btn" value="9">3</button>
+                    <button onclick="operation('*')">*</button>
+                    <button onclick="show(0)" class="span-2" id="btn" value="0">0</button>
+                    <button onclick="result()" >=</button>
+                    <button onclick="operation('/')">/</button>
+                </div>
+            </div>
+        </center>    
+</body>
+<script src="calcu.js"></script>
+</html>
